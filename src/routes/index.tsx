@@ -1,15 +1,15 @@
 import * as React from "react";
 import { Route, Routes } from "react-router";
 import TaskList from "components/taskList";
-import FormTask from "components/createForm";
+import CreateForm from "components/createForm";
 
-const RoterLink = () => {
+const RouterLink = () => {
   return (
     <Routes>
       <Route path="/" element={<TaskList />} />
-      <Route path="/create-task" element={<FormTask />} />
+      <Route path="/create-task" element={<CreateForm />} />
     </Routes>
   );
 }
 
-export default RoterLink;
+export default RouterLink;

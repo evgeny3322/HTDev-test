@@ -15,7 +15,7 @@ const Alert = React.forwardRef<HTMLDivElement, AlertProps>(function Alert(
   return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
 });
 
-const BtnSubmit = () => {
+const Button = () => {
   const storeForm = useSelector((state: RootState) => state.dataForm);
   const location = storeForm.location as unknown as string;
   const currentText = storeForm.text as unknown as string;
@@ -106,4 +106,4 @@ const BtnSubmit = () => {
   );
 }
 
-export default BtnSubmit;
+export default Button;

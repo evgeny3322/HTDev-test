@@ -5,14 +5,14 @@ import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select, { SelectChangeEvent } from "@mui/material/Select";
-import BtnSubmit from "../button";
+import Button from "../button";
 
 import { useSelector, useDispatch } from 'react-redux';
 import { RootState } from 'store/store';
 import { changeLocation, changeText, changeSign } from 'store/formState/FormState';
 
 
-const FormTask = () => {
+const CreateForm = () => {
   const dispatch = useDispatch();
   const { location, text, sign} = useSelector((state: RootState) => state.dataForm)
   const [currentLocation, setCurrentLocation] = useState(location ? location : '');
@@ -124,9 +124,9 @@ const FormTask = () => {
           </FormControl>
         </Box>
       </div>
-      <BtnSubmit />
+      <Button />
     </div>
   );
 }
 
-export default FormTask;
+export default CreateForm;

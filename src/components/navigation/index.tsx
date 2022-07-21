@@ -34,7 +34,7 @@ const MyTabs = () => {
   );
 }
 
-const TabsRouter = () => {
+const Navigation = () => {
   return (
       <Box sx={{ width: '100%' }}>
         <MyTabs />
@@ -42,4 +42,4 @@ const TabsRouter = () => {
   );
 }
 
-export default TabsRouter;
+export default Navigation;
